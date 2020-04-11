@@ -17,6 +17,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{B6D9ACD9-B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankOfDotNet.MvcClient", "src\BankOfDotNet.MvcClient\BankOfDotNet.MvcClient.csproj", "{9B4E7552-FDC4-4400-83FB-BB378D3A2D0C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "postman", "postman", "{DC81368B-BEA6-406D-937F-247F58FAD721}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BankOfDotNet.IdentitySrv", "BankOfDotNet.IdentitySrv", "{BD44A1BA-D796-45C2-8978-E7647C44CD3B}"
+	ProjectSection(SolutionItems) = preProject
+		BankingApplication - IdentityServer4Test.postman_collection.json = BankingApplication - IdentityServer4Test.postman_collection.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BankOfDotNet.API", "BankOfDotNet.API", "{4C43B272-B688-47EE-B7CE-4171D6D537DC}"
+	ProjectSection(SolutionItems) = preProject
+		BankingApplication.postman_collection.json = BankingApplication.postman_collection.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +54,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BD44A1BA-D796-45C2-8978-E7647C44CD3B} = {DC81368B-BEA6-406D-937F-247F58FAD721}
+		{4C43B272-B688-47EE-B7CE-4171D6D537DC} = {DC81368B-BEA6-406D-937F-247F58FAD721}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {46D2D397-886D-4B5A-9418-3B027305318F}
