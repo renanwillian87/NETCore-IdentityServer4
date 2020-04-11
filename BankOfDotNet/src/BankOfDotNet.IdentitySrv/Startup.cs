@@ -88,6 +88,24 @@ namespace BankOfDotNet.IdentitySrv
                     }
                     context.SaveChanges();
                 }
+                else
+                {
+                    var saveChanges = false;
+
+                    foreach (var client in Config.GetClients())
+                    {
+                        if(context.Clients.Where(x => x.ClientId == client.ClientId).Count() == 0)
+                        {
+                            context.Clients.Add(client.ToEntity());
+                            saveChanges = true;
+                        }
+                    }
+
+                    if(saveChanges)
+                    {
+                        context.SaveChanges();
+                    }
+                }
 
                 //Seed the Identity Resources
                 if (!context.IdentityResources.Any())
