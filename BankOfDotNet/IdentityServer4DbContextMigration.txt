@@ -1,0 +1,33 @@
+Project: 
+BankOfDotNet.IdentitySrv
+
+Description:
+    1 - Configuration Identity Server 4 DbContext on Startup.cs
+    Using EntityFramework Core for configuration and operational data
+    http://docs.identityserver.io/en/release/quickstarts/8_entity_framework.html
+
+    Contexts
+    - PersistedGrantDbContext
+    - ConfigurationDbContext
+    
+    services.AddIdentityServer()
+        .AddDeveloperSigningCredential()
+        .AddTestUsers(Config.GetUsers())
+        .AddConfigurationStore(options =>
+        {
+            options.ConfigureDbContext =
+                b => b.UseSqlServer(connecionString,
+                    sql => sql.MigrationsAssembly(migrationAssembly)); 
+        })
+        //Operational Store: tokens, consents, codes, etc
+        .AddOperationalStore(options =>
+        {
+            options.ConfigureDbContext =
+                b => b.UseSqlServer(connecionString,
+                    sql => sql.MigrationsAssembly(migrationAssembly));
+        });
+    }
+
+    2 - Run Migration Command
+    Add-Migration InitialIS4PersistedGrantDBMigration -c PersistedGrantDBContext -o Data/Migrations/IdentityServer/PersistedGrantDb
+    Add-Migration InitialIS4ConfigurationDBMigration -c ConfigurationDBContext -o Data/Migrations/IdentityServer/ConfigurationDb

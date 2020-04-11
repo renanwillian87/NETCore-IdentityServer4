@@ -38,7 +38,7 @@ namespace BankOfDotNet.IdentitySrv
             };
         }
 
-        public static IEnumerable<ApiResource> GetAllApiResources()
+        public static IEnumerable<ApiResource> GetApiResources()
         {
             return new List<ApiResource>
             { 

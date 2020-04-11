@@ -12,6 +12,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{B6D9ACD9-BD1F-4F31-A82F-F439493A2572}"
 	ProjectSection(SolutionItems) = preProject
 		GrantTypeNotes.txt = GrantTypeNotes.txt
+		IdentityServer4DbContextMigration.txt = IdentityServer4DbContextMigration.txt
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankOfDotNet.MvcClient", "src\BankOfDotNet.MvcClient\BankOfDotNet.MvcClient.csproj", "{9B4E7552-FDC4-4400-83FB-BB378D3A2D0C}"
