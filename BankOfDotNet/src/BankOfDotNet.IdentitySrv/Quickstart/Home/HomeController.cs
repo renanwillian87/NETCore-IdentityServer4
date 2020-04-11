@@ -17,10 +17,10 @@ namespace BankOfDotNet.IdentitySrv
     public class HomeController : Controller
     {
         private readonly IIdentityServerInteractionService _interaction;
-        private readonly IWebHostEnvironment _environment;
+        private readonly Microsoft.AspNetCore.Hosting.IHostingEnvironment _environment;
         private readonly ILogger _logger;
 
-        public HomeController(IIdentityServerInteractionService interaction, IWebHostEnvironment environment, ILogger<HomeController> logger)
+        public HomeController(IIdentityServerInteractionService interaction, Microsoft.AspNetCore.Hosting.IHostingEnvironment environment, ILogger<HomeController> logger)
         {
             _interaction = interaction;
             _environment = environment;

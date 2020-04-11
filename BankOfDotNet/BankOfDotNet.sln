@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{B6D9ACD9-B
 		GrantTypeNotes.txt = GrantTypeNotes.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankOfDotNet.MvcClient", "src\BankOfDotNet.MvcClient\BankOfDotNet.MvcClient.csproj", "{9B4E7552-FDC4-4400-83FB-BB378D3A2D0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{967F9235-37B0-4C68-AA12-EDD7A3E2C0F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{967F9235-37B0-4C68-AA12-EDD7A3E2C0F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{967F9235-37B0-4C68-AA12-EDD7A3E2C0F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B4E7552-FDC4-4400-83FB-BB378D3A2D0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B4E7552-FDC4-4400-83FB-BB378D3A2D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B4E7552-FDC4-4400-83FB-BB378D3A2D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B4E7552-FDC4-4400-83FB-BB378D3A2D0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
